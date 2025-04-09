@@ -1,10 +1,10 @@
 @use "sass:color";
 
-$orange: rgb(232, 173, 66);
+$orange: #F2AC1B;
 $black: #000;
 $white: #fff;
-$gray: rgb(166, 161, 150);
-$maroon: rgb(148, 76, 116);
+$gray: #A6A194;
+$maroon: #9D4676;
 
 // Base settings for all themes that can optionally be
 // overridden by the super-theme
@@ -14,7 +14,7 @@ $backgroundColor: $white;
 
 
 // Primary/body text
-$mainFont: 'Lato', sans-serif;
+$mainFont: 'Inter', sans-serif;
 $mainFontSize: 20px;
 $mainColor: #eee;
 
@@ -23,7 +23,7 @@ $blockMargin: 20px;
 
 // Headings
 $headingMargin: 0 0 $blockMargin 0;
-$headingFont: 'Lato', sans-serif;
+$headingFont: 'Inter', sans-serif;
 $headingColor: $black;
 $headingLineHeight: 1.2;
 $headingLetterSpacing: normal;
@@ -32,9 +32,9 @@ $headingTextShadow: none;
 $headingFontWeight: bold;
 $heading1TextShadow: $headingTextShadow;
 
-$heading1Size: 3.77em;
-$heading2Size: 2.11em;
-$heading3Size: 1.55em;
+$heading1Size: 2em;
+$heading2Size: 1.6rem;
+$heading3Size: 1.3em;
 $heading4Size: 1.00em;
 
 $codeFont: monospace;

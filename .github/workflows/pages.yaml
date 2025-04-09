@@ -1,0 +1,22 @@
+name: GitHub Pages
+on: push
+permissions:
+  contents: write
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install dependencies
+        run: pnpm i
+      - name: Build application
+        run: pnpm build
+      - name: Remove all files except dist directory
+        run: find . -maxdepth 1 ! -name 'dist' ! -name '.' -exec rm -rf {} +
+      - name: Push to gh-pages
+        run: |
+          git checkout gh-pages
+          git config --global user.name 'Robot'
+          git config --global user.email 'robot@users.noreply.github.com'
+          git commit -am "Automated report"
+          git push

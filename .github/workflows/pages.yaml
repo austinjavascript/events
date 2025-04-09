@@ -17,8 +17,9 @@ jobs:
       - name: Move dist to docs
         run: mv dist docs
       - uses: actions/checkout@v3
-        ref: 'gh-pages'
-        clean: false
+        with:
+          ref: 'gh-pages'
+          clean: false
       - name: Push to gh-pages
         run: |
           git config user.name "github-actions[bot]"

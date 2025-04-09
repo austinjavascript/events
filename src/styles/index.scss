@@ -1,5 +1,16 @@
 @import "./theme";
 
+sl-qr-code {
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  background: white;
+
+  &::part(base) {
+    /* Removes line-height from canvas element */
+    display: block;
+  }
+}
+
 .agendaWrapper {
   display: flex;
   justify-content: center;
@@ -46,3 +57,4 @@
     color: rgba(255, 255, 255, 0.59);
   }
 }
+

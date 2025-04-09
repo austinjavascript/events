@@ -16,9 +16,11 @@ jobs:
         run: find . -maxdepth 1 ! -name 'dist' ! -name '.git' ! -name '.' -exec rm -rf {} +
       - name: Move dist to docs
         run: mv dist docs
+      - uses: actions/checkout@v3
+        ref: 'gh-pages'
+        clean: false
       - name: Push to gh-pages
         run: |
-          git checkout gh-pages
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add .

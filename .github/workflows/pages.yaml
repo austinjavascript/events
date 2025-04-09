@@ -14,6 +14,8 @@ jobs:
         run: pnpm build
       - name: Remove all files except dist directory
         run: find . -maxdepth 1 ! -name 'dist' ! -name '.git' ! -name '.' -exec rm -rf {} +
+      - name: Move dist to docs
+        run: mv dist docs
       - name: Push to gh-pages
         run: |
           git checkout gh-pages

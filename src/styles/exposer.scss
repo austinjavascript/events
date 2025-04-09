@@ -5,6 +5,11 @@
 @import "./settings.scss";
 
 :root {
+  --r-orange: #{$orange};
+  --r-black: #{$black};
+  --r-white: #{$white};
+  --r-gray: #{$gray};
+  --r-maroon: #{$maroon};
   --r-background-color: #{$backgroundColor};
   --r-main-font: #{$mainFont};
   --r-main-font-size: #{$mainFontSize};

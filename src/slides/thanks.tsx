@@ -1,3 +1,5 @@
+import SlQrCode from "@shoelace-style/shoelace/dist/react/qr-code/index.js";
+
 const Splash = () => {
   return (
     <section>
@@ -10,12 +12,32 @@ const Splash = () => {
         </div>
         <div className="quadrant">
           <div className="quadrant-content">
-            <h2>We want your feedback!</h2>
+            <SlQrCode
+              value="https://forms.gle/BEsMjyE3cxDUvVmq7"
+              label="Scan this QR code to give feedback!"
+              size={300}
+            ></SlQrCode>
+            <h2 style={{ marginTop: "1rem" }}>We want your feedback!</h2>
           </div>
         </div>
         <div className="quadrant">
           <div className="quadrant-content">
-            <h3>Meet us at Lazarus!</h3>
+            <div style={{ position: "relative" }}>
+              <img width={500} src="/zilker-directions.png" />
+              <h3
+                style={{
+                  marginTop: "1rem",
+                  position: "absolute",
+                  bottom: "4rem",
+                  right: "4rem",
+                  textWrap: "balance",
+                  background: "white",
+                  padding: ".5em",
+                }}
+              >
+                Meet us at Zilker Brewing!
+              </h3>
+            </div>
           </div>
         </div>
         <div className="quadrant">
@@ -25,7 +47,7 @@ const Splash = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Splash
+export default Splash;

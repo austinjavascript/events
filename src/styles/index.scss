@@ -21,6 +21,7 @@ sl-qr-code {
 
 .agenda {
   color: $black;
+  --r-link-color: var(--r-link-color-dark);
 }
 
 .quadrants {
@@ -57,4 +58,3 @@ sl-qr-code {
     color: rgba(255, 255, 255, 0.59);
   }
 }
-

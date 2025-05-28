@@ -1,4 +1,5 @@
 import SlQrCode from "@shoelace-style/shoelace/dist/react/qr-code/index.js";
+import { Sponsors } from "../components/Sponsors";
 
 const Splash = () => {
   return (
@@ -47,8 +48,7 @@ const Splash = () => {
         </div>
         <div className="quadrant">
           <div className="quadrant-content">
-            <h2>Sponsored by</h2>
-            <img src="/cloudflare.png" />
+            <Sponsors />
           </div>
         </div>
       </div>

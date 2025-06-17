@@ -9,6 +9,12 @@ const Agenda202505 = () => {
             <li>Shirts!</li>
             <li>Frontend Masters raffle</li>
             <li>
+              ⚡️ Accelerating migrations with AI
+            </li>
+            <li>
+              ⚡️ Nutrition for software engineers
+            </li>
+            <li>
               🎤 Universal Tools For AI
             </li>
             <li>Wrap up</li>

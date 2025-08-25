@@ -6,6 +6,7 @@ import "reveal.js/dist/reveal.css";
 import "./styles/index.scss";
 import Splash from "./slides/splash";
 import Agenda202508 from "./slides/agenda-2025-08";
+import Agenda202509 from "./slides/agenda-2025-09";
 import Thanks from "./slides/thanks";
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
       <div className="slides">
         <Splash />
         <Agenda202508 />
+        <Agenda202509 />
         <Thanks />
       </div>
     </div>

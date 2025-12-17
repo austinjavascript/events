@@ -5,7 +5,8 @@ import Notes from "reveal.js/plugin/notes/notes";
 import "reveal.js/dist/reveal.css";
 import "./styles/index.scss";
 import Splash from "./slides/splash";
-import Agenda202511 from "./slides/agenda-2025-11";
+import Agenda202512 from "./slides/agenda-2025-12";
+import Trivia202512 from "./slides/trivia-2025-12";
 import Thanks from "./slides/thanks";
 
 function App() {
@@ -46,7 +47,8 @@ function App() {
     <div className="reveal" ref={deckDivRef}>
       <div className="slides">
         <Splash />
-        <Agenda202511 />
+        <Agenda202512 />
+        <Trivia202512 />
         <Thanks />
       </div>
     </div>

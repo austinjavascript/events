@@ -5,9 +5,8 @@ import Notes from "reveal.js/plugin/notes/notes";
 import "reveal.js/dist/reveal.css";
 import "./styles/index.scss";
 import Splash from "./slides/splash";
-import Agenda202512 from "./slides/agenda-2025-12";
-import Trivia202512 from "./slides/trivia-2025-12";
 import Thanks from "./slides/thanks";
+import Agenda202603 from "./slides/agenda-2026-03";
 
 function App() {
   const deckDivRef = useRef<HTMLDivElement>(null); // reference to deck container div
@@ -37,7 +36,7 @@ function App() {
           deckRef.current.destroy();
           deckRef.current = null;
         }
-      } catch (e) {
+      } catch {
         console.warn("Reveal.js destroy call failed.");
       }
     };
@@ -47,8 +46,7 @@ function App() {
     <div className="reveal" ref={deckDivRef}>
       <div className="slides">
         <Splash />
-        <Agenda202512 />
-        <Trivia202512 />
+        <Agenda202603 />
         <Thanks />
       </div>
     </div>

@@ -8,11 +8,6 @@ const Agenda202603 = () => {
             <li>Welcome!</li>
             <li>Shirts!</li>
             <li>⚡️ AI Chatbots Without the Chaos</li>
-            <li>⚡️ JS for GPU compute</li>
-            <li>
-              ⚡️ Teaching Your AI to See: Validating agentic UI development
-              flows
-            </li>
             <li>⚡️ Vibe Refactoring</li>
             <li>
               🎤 Why JavaScript's Missing Full-Stack Adoption at the Largest

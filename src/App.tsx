@@ -6,8 +6,8 @@ import "reveal.js/dist/reveal.css";
 import "./styles/index.scss";
 import Splash from "./slides/splash";
 import Thanks from "./slides/thanks";
-import Agenda202603 from "./slides/agenda-2026-03";
 import Contribute from "./slides/contribute";
+import Agenda202604 from "./slides/agenda-2026-04";
 
 function App() {
   const deckDivRef = useRef<HTMLDivElement>(null); // reference to deck container div
@@ -47,7 +47,7 @@ function App() {
     <div className="reveal" ref={deckDivRef}>
       <div className="slides">
         <Splash />
-        <Agenda202603 />
+        <Agenda202604 />
         <Contribute />
         <Thanks />
       </div>

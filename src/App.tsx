@@ -7,7 +7,7 @@ import "./styles/index.scss";
 import Splash from "./slides/splash";
 import Thanks from "./slides/thanks";
 import Contribute from "./slides/contribute";
-import Agenda202604 from "./slides/agenda-2026-04";
+import Agenda202608 from "./slides/agenda-2026-08";
 
 function App() {
   const deckDivRef = useRef<HTMLDivElement>(null); // reference to deck container div
@@ -47,7 +47,7 @@ function App() {
     <div className="reveal" ref={deckDivRef}>
       <div className="slides">
         <Splash />
-        <Agenda202604 />
+        <Agenda202608 />
         <Contribute />
         <Thanks />
       </div>

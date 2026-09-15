@@ -11,6 +11,26 @@ sl-qr-code {
   }
 }
 
+.sponsor-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+  margin-top: 32px;
+
+  img {
+    width: 360px;
+    max-height: 90px;
+    margin: 0;
+    object-fit: contain;
+  }
+
+  .block-logo {
+    width: 300px;
+  }
+
+}
+
 .agendaWrapper {
   display: flex;
   justify-content: center;

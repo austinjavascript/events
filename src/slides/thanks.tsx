@@ -1,5 +1,4 @@
 import SlQrCode from "@shoelace-style/shoelace/dist/react/qr-code/index.js";
-import { Sponsors } from "../components/Sponsors";
 
 const Splash = () => {
   return (
@@ -9,6 +8,16 @@ const Splash = () => {
           <div className="quadrant-content">
             <h1>Thank you for joining!</h1>
             <p>we’ll see you next month :)</p>
+          </div>
+        </div>
+        <div className="quadrant">
+          <div className="quadrant-content">
+            <SlQrCode
+              value="https://forms.gle/VoebmRR7KFTKL8g6A?utm_source=luma"
+              label="Scan this QR code to sign up to give a talk!"
+              size={300}
+            ></SlQrCode>
+            <h2 style={{ marginTop: "1rem" }}>Come and give a talk!</h2>
           </div>
         </div>
         <div className="quadrant">
@@ -39,11 +48,6 @@ const Splash = () => {
                 Meet us at Zilker Brewing!
               </h3>
             </div>
-          </div>
-        </div>
-        <div className="quadrant">
-          <div className="quadrant-content">
-            <Sponsors />
           </div>
         </div>
       </div>
